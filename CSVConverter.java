@@ -36,6 +36,10 @@ public class CSVConverter{
 	}
 
 	public static void main (String[] args){
+		if(args.length < 1){
+			System.out.println("Must include input file.");
+			return;
+		}
 		String[] columns;
 		String row;
 		String filename = args[0];
